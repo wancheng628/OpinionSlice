@@ -1,0 +1,335 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostQuestionActivity" 
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/layout_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue_main" >
+
+        <Button
+            android:id="@+id/btn_setting_save"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/blue_main"
+            android:text="SAVE"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:text="cancel"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_setting_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layout_titlebar"
+        android:background="@color/light_gray"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="0dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/lb_setting_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="Name"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txt_setting_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:ems="10"
+                    android:textSize="15sp" >
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/lb_setting_livein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="Lives In"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_setting_livein"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/lb_setting_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="Birthday"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/txt_setting_birthday_day"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="3dp"
+                        android:background="@color/light_gray"
+                        android:ems="10"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:hint="DD"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/txt_setting_birthday_month"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_toRightOf="@+id/txt_setting_birthday_day"
+                        android:background="@color/light_gray"
+                        android:ems="10"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:hint="MM"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/txt_setting_birthday_year"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_toRightOf="@+id/txt_setting_birthday_month"
+                        android:background="@color/light_gray"
+                        android:ems="10"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:hint="YYYY"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/lb_setting_nationality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="Nationality"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spin_setting_nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/lb_setting_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="Sex"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+				<LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal">
+
+	                <Button
+	                    android:id="@+id/btn_setting_sex_male"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="30dp"
+	                    android:background="@color/blue_main"
+	                    android:paddingLeft="10dp"
+	                    android:paddingRight="10dp"
+	                    android:text="I&apos;M A GUY"
+	                    android:textColor="@color/white"
+	                    android:textSize="14sp"
+	                    android:textStyle="bold" />
+	
+	                <Button
+	                    android:id="@+id/btn_setting_sex_female"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="30dp"
+	                    android:background="@color/light_gray"
+	                    android:paddingLeft="10dp"
+	                    android:paddingRight="10dp"
+	                    android:text="I&apos;M A GIRL"
+	                    android:textColor="@color/gray_main"
+	                    android:textSize="14sp"
+	                    android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_setting_other"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="0dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/lb_setting_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notifications"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lb_setting_tailored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="Tailored for you"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <Switch
+                    android:id="@+id/switch_setting_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:textColorLink="@color/blue_main"
+                    android:textOff="OFF"
+                    android:textOn="ON" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vibrate"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="for notifications"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <Switch
+                    android:id="@+id/switch_setting_vibrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+	
+</RelativeLayout>

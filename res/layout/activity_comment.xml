@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+			
+    		<RelativeLayout 
+    		    android:layout_width="match_parent"
+    		    android:layout_height="match_parent">
+    		    <com.ben.opinionslice.view.PullAndLoadListView
+				    android:id="@+id/view_commentList"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:background="@color/gray_main"
+				    android:divider="@color/white"
+				    android:dividerHeight="0dp" 
+				    tools:listitem="@layout/layout_comment_item" >
+				</com.ben.opinionslice.view.PullAndLoadListView>
+	
+				<TextView
+				    android:id="@+id/txt_beFirst"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_below="@+id/view_commentList"
+				    android:gravity="center"
+				    android:paddingTop="25dp"
+				    android:text="@string/be_the_first_en"
+				    android:textColor="@color/gray_2"
+				    android:textSize="17sp"
+				    android:textStyle="italic"
+				    android:visibility="invisible" />
+
+    		</RelativeLayout>
+			
+	
+			<RelativeLayout
+			    android:id="@+id/layout_write_comment"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="bottom"
+			    android:background="@color/black"
+			    android:orientation="horizontal"
+			    android:padding="5dp"
+			    android:visibility="invisible" >
+			
+				<EditText
+				    android:id="@+id/edit_write_comment1"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_toLeftOf="@+id/btn_post_comment"
+				    android:background="@color/white"
+				    android:ems="10"
+				    android:gravity="top"
+				    android:hint="@string/write_comment_en"
+				    android:inputType="textMultiLine"
+				    android:maxLength="600"
+				    android:maxLines="6"
+				    android:padding="10dp"
+				    android:textSize="16sp" >
+		
+				</EditText>
+		
+				<Button
+				    android:id="@+id/btn_post_comment"
+				    android:layout_width="70dp"
+				    android:layout_height="41dp"
+				    android:layout_alignParentRight="true"
+				    android:layout_alignTop="@id/edit_write_comment1"
+				    android:layout_marginLeft="5dp"
+				    android:background="@color/blue_main"
+				    android:padding="0dp"
+				    android:text="@string/add_en"
+				    android:textColor="@color/white"
+				    android:textStyle="bold" />
+		
+			</RelativeLayout>
+			
+</FrameLayout>

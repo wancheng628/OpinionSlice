@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostCommentActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+	    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white" >
+	
+            <TextView
+                android:id="@+id/txt_comment_character_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_comment_post"
+                android:layout_alignBottom="@+id/btn_comment_post"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/btn_comment_post"
+                android:text="600"
+                android:textColor="@color/gray_main"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_comment_post"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@color/blue_main"
+                android:text="POST"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="cancel"
+                android:textColor="@color/blue_main"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+		<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/img_user_profile_picture1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ab_background_textured_mytheme" />
+
+            <TextView
+                android:id="@+id/txt_user_profile_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_user_profile_picture1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/img_user_profile_picture1"
+                android:text="Marc Lebouview"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/edit_write_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/img_user_profile_picture1"
+                android:layout_below="@+id/img_user_profile_picture1"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Write your comment..."
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:maxLength="600"
+                android:maxLines="6"
+                android:textSize="16sp" >
+
+                <requestFocus />
+            </EditText>
+			<!-- 
+            <CheckBox
+                android:id="@+id/chk_comment_stay_anonymous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edit_write_comment"
+                android:layout_below="@+id/edit_write_comment"
+                android:text="stay anonymous"
+                android:textColor="@color/gray_main" />
+			 -->
+        </RelativeLayout>
+	</LinearLayout>
+</RelativeLayout>

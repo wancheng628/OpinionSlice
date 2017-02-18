@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_comment_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+				<TextView
+			        android:id="@+id/txt_question_detail_creator"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="5dp"
+			        android:paddingLeft="10dp"
+			        android:text="David Cole"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textColor="#333333"
+			        android:textSize="14sp" />
+				<TextView
+			        android:id="@+id/txt_asked"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentTop="true"
+			        android:layout_toRightOf="@+id/txt_question_detail_creator"
+			        android:paddingLeft="5dp"
+			        android:text="@string/asked_en"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textColor="#333333"
+			        android:textSize="14sp" />
+			    <TextView
+			        android:id="@+id/txt_question_detail_duration"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentTop="true"
+			        android:layout_marginRight="5dp"
+			        android:text="2h"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textColor="#AAAAAA"
+			        android:textSize="14sp" />
+
+			    <LinearLayout
+			        android:id="@+id/layout_question_detail_content"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:orientation="vertical" 
+			        android:layout_alignLeft="@+id/txt_question_detail_creator"
+			        android:layout_alignRight="@+id/txt_question_detail_duration"
+			        android:layout_below="@+id/txt_question_detail_creator"
+			        android:layout_marginTop="5dp">
+			        
+			        <TextView
+			        android:id="@+id/txt_question_detail_content"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_vertical"
+			        android:text="Do you think a democratic form of government is better than a parliamentary one?"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textColor="#000000"
+			        android:textSize="16sp"
+			        />
+
+			        <TextView
+			            android:id="@+id/txt_question_detail_link"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:ellipsize="end"
+			            android:gravity="center_vertical"
+			            android:maxLength="25"
+			            android:maxLines="1"
+			            android:singleLine="true"
+			            android:text="http://"
+			            android:textAppearance="?android:attr/textAppearanceSmall"
+			            android:textColor="#8bd"
+			            android:textSize="16sp" />
+
+			    </LinearLayout>
+			    <TextView
+			        android:id="@+id/txt_myvoice"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_below="@+id/layout_question_detail_content"
+			        android:layout_marginBottom="5dp"
+			        android:layout_marginRight="30dp"
+			        android:text="my voice:"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textColor="#9E9E9E"
+			        android:textSize="14sp" />
+			
+			    <LinearLayout
+			        android:id="@+id/layer_question_detail_vote_no"
+			        android:layout_width="50dp"
+			        android:layout_height="75dp"
+			        android:layout_alignParentRight="true"
+			        android:layout_below="@+id/txt_myvoice"
+			        android:layout_marginRight="10dp"
+			        android:background="#55ACEE"
+			        android:clickable="true"
+			        android:descendantFocusability="blocksDescendants"
+			        android:orientation="vertical" >
+			
+			        <TextView
+			            android:id="@+id/txt_question_detail_vote_no_percent"
+			            android:layout_width="wrap_content"
+			            android:layout_height="40dp"
+			            android:layout_gravity="center"
+			            android:gravity="center_vertical"
+			            android:paddingTop="10dp"
+			            android:text="100%"
+			            android:textAppearance="?android:attr/textAppearanceSmall"
+			            android:textColor="#3B3939"
+			            android:textSize="17sp"
+			            android:textStyle="bold" />
+			
+			        <TextView
+			            android:id="@+id/txt_vote_no_text"
+			            android:layout_width="wrap_content"
+			            android:layout_height="40dp"
+			            android:layout_gravity="center"
+			            android:gravity="center_vertical"
+			            android:text="NO"
+			            android:textAppearance="?android:attr/textAppearanceSmall"
+			            android:textColor="#3B3939"
+			            android:textSize="17sp"
+			            android:textStyle="bold" />
+			    </LinearLayout>
+			
+			    <LinearLayout
+			        android:id="@+id/layer_question_detail_vote_yes"
+			        android:layout_width="50dp"
+			        android:layout_height="75dp"
+			        android:layout_below="@+id/txt_myvoice"
+			        android:layout_marginRight="10dp"
+			        android:layout_toLeftOf="@+id/layer_question_detail_vote_no"
+			        android:background="#CDCDCD"
+			        android:orientation="vertical" >
+			
+			        <TextView
+			            android:id="@+id/txt_question_detail_vote_yes_percent"
+			            android:layout_width="wrap_content"
+			            android:layout_height="40dp"
+			            android:layout_gravity="center"
+			            android:gravity="center_vertical"
+			            android:paddingTop="10dp"
+			            android:text="100%"
+			            android:textAppearance="?android:attr/textAppearanceSmall"
+			            android:textColor="#3B3939"
+			            android:textSize="17sp"
+			            android:textStyle="bold" />
+			
+			        <TextView
+			            android:id="@+id/txt_vote_yes_text"
+			            android:layout_width="wrap_content"
+			            android:layout_height="40dp"
+			            android:layout_gravity="center"
+			            android:gravity="center_vertical"
+			            android:text="YES"
+			            android:textAppearance="?android:attr/textAppearanceSmall"
+			            android:textColor="#3B3939"
+			            android:textSize="17sp"
+			            android:textStyle="bold" />
+			    </LinearLayout>
+			
+			    <TextView
+			        android:id="@+id/txt_question_detail_vote_count"
+			        android:layout_width="100dp"
+			        android:layout_height="24dp"
+			        android:layout_alignLeft="@+id/txt_opinion_shared1"
+			        android:layout_alignRight="@+id/txt_opinion_shared1"
+			        android:layout_alignTop="@+id/layer_question_detail_vote_yes"
+			        android:layout_marginTop="17dp"
+			        android:gravity="center"
+			        android:text="100"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textColor="#56ACEE"
+			        android:textSize="22sp"
+			        android:textStyle="bold" />
+			
+			    <TextView
+			        android:id="@+id/txt_opinion_shared1"
+			        android:layout_width="100dp"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/txt_question_detail_vote_count"
+			        android:layout_marginRight="14dp"
+			        android:layout_toLeftOf="@+id/layer_question_detail_vote_yes"
+			        android:gravity="center"
+			        android:text="opinion shared"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textColor="#807b7b"
+			        android:textSize="14sp" />
+			
+			    <Button
+			        android:id="@+id/btn_add_comment"
+			        style="?android:attr/buttonStyleSmall"
+			        android:layout_width="32dp"
+			        android:layout_height="32dp"
+			        android:layout_below="@+id/txt_opinion_shared1"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginTop="20dp"
+			        android:background="@drawable/ic_action_comment"
+			        android:gravity="center" />
+			
+			</RelativeLayout>

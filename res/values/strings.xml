@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OpinionSlice</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_share">Share</string>
+    <string name="search_hint">Input question number</string>
+	<string name="hello_world">Hello world!</string>
+    <string name="title_activity_comment">Questions</string>
+    <string name="action_login">Login</string>
+    <string name="action_language">French</string>
+    <string name="title_activity_post_question">PostQuestionActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <!--
+    <string name="app_id">935457883146934</string> 
+     -->
+    <string name="app_id">1461186377469393</string>
+    
+    <string name="title_activity_post_comment">PostCommentActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_search_results">SearchResultsActivity</string>
+
+    <string name="duration_second_en">secs</string>
+    <string name="duration_minute_en">mins</string>
+    <string name="duration_hour_en">h</string>
+    <string name="duration_day_en">d</string>
+    <string name="duration_week_en">w</string>
+    <string name="duration_month_en">m</string>
+    <string name="duration_year_en">yr</string>
+    <string name="duration_second_fr">s</string>
+    <string name="duration_minute_fr">mins</string>
+    <string name="duration_hour_fr">h</string>
+    <string name="duration_day_fr">j</string>
+    <string name="duration_week_fr">sem</string>
+    <string name="duration_month_fr">m</string>
+    <string name="duration_year_fr">a</string>
+    
+    <!-- Feeds Page -->
+    
+    <string name="hint_select_another_location_en">Search another location</string>
+    <string name="hint_select_another_location_fr">Cherchez un autre lieu</string>
+    
+    <string name="yes_en">YES</string>
+    <string name="yes_fr">OUI</string>
+    <string name="no_en">NO</string>
+    <string name="no_fr">NON</string>
+    <string name="my_voice_en">my voice:</string>
+    <string name="my_voice_fr">mon avis:</string>
+    <string name="opinion_shared_en">opinions shared</string>
+    <string name="opinion_shared_fr">avis partagés</string>
+    <string name="signin_en">Sign In</string>
+    <string name="signin_fr">Connexion</string>
+    <string name="settings_en">Settings</string>
+    <string name="settings_fr">Paramètres</string>
+    <string name="signout_en">Sign Out</string>
+    <string name="signout_fr">Déconnexion</string>
+    <string name="search_by_question_number_en">enter question number</string>
+    <string name="search_by_question_number_fr"> Entrez numéro question</string>
+        
+    <string name="login_require_title_en">Hey!</string>
+    <string name="login_require_title_fr">Umm&#8230;</string>
+    <string name="login_require_msg_en">You must sign in to do that</string>
+    <string name="login_require_msg_fr">Vous devez vous connecter pour cela</string>
+    
+    <!-- Question View Page -->
+    <string name="asked_en">asked</string>
+    <string name="asked_fr">a demandé</string>
+    <string name="agree_en">agrees</string>
+    <string name="agree_fr">est d\'accord</string>
+    <string name="withyou_en">with you</string>
+    <string name="withyou_fr">avec toi</string>
+     
+    <string name="disagree_en">disagrees</string>
+    <string name="disagree_fr">n\'est pas d\'accord</string>
+    <string name="add_en">add</string>
+    <string name="add_fr">poster</string>
+    <string name="write_comment_en">Write your comment&#8230;</string>
+    <string name="write_comment_fr">Ajouter votre commentaire&#8230;</string>
+    
+    <!-- Login Page -->
+    <string name="prevent_spam_en">We don\'t like logins but we do it to prevent spams.</string>
+    <string name="prevent_spam_fr">Cela prend 2 secondes et réduit les spams.</string>
+    <string name="limit_data_en">We limit data collected about you.</string>
+    <string name="limit_data_fr">Nous limitons les données enregistrées.</string>
+    <string name="dont_ask_friend_list_en">We do not ask for your friend list.</string>
+    <string name="dont_ask_friend_list_fr">Nous ne demandons pas votre liste d\'amis.</string>
+    <string name="dont_post_en">We do not post on your behalf.</string>
+    <string name="dont_post_fr">Nous ne postons pas sur votre mur. (on déteste ça)</string>
+    <string name="dont_share_identity_en">We do not share your identity.</string>
+    <string name="dont_share_identity_fr">On ne partage pas votre identité.</string>
+    <string name="term_of_use_en">Term of use</string>
+    <string name="term_of_use_fr">Conditions d\'utilisation</string>
+    <string name="privacy_en">Privacy</string>
+    <string name="privacy_fr">Vie Privée</string>
+	<string name="unless_required_en">(unless required by law)</string>
+    <string name="unless_required_fr"></string>
+    
+    <!-- Post Question Page -->
+    <string name="cancel_en">Cancel</string>
+    <string name="cencel_fr">Annuler</string>
+    <string name="post_en">POST</string>
+    <string name="post_fr">POSTER</string>
+    <string name="anonymous_en">stay anonymous</string>
+    <string name="anonymous_fr">rester anonyme</string>
+    <string name="anonymous1_en">Anonymous</string>
+    <string name="anonymous1_fr">Anonyme</string>
+    <string name="paste_link_en">paste a link here (not required)</string>
+    <string name="paste_link_fr">ajouter un lien (non requis)</string>
+    <string name="add_location_en">add a location (required)</string>
+    <string name="add_location_fr">ajouter un lieu (requis)</string>
+    <string name="select_tag_en">select a tag (required)</string>
+    <string name="select_tag_fr">choisir un tag (requis)</string>
+    <string name="updating_en">updating</string>
+    <string name="updating_fr">recherche</string>
+    <string name="write_question_en">Write your question&#8230;\n- must be Objective\n- the expected answer is Yes or NO</string>
+    <string name="write_question_fr">Composez votre question \n- doit être objective \n- être répondue par Oui ou Non"</string>
+    <string name="news_en">News</string>
+    <string name="news_fr">Actualité</string>
+    <string name="politics_en">Politics</string>
+    <string name="politics_fr">Politique</string>
+    <string name="business_en">Business</string>
+    <string name="business_fr">Société</string>
+    <string name="tech_en">Tech</string>
+    <string name="tech_fr">Tech</string>
+    <string name="sport_en">Sport</string>
+    <string name="sport_fr">Sport</string>
+    <string name="entertainment_en">Entertainment</string>
+    <string name="entertainment_fr">Culture</string>
+    <string name="planet_en">Planet</string>
+    <string name="planet_fr">Economie</string>
+    <string name="lifestyle_en">Lifestyle</string>
+    <string name="lifestyle_fr">Planète</string>
+    <string name="health_en">Health</string>
+    <string name="health_fr">Santé</string>
+    <string name="default_location_en">United States</string>
+    <string name="default_location_fr">France</string>
+    <string name="posting_en">Posting&#8230;</string>
+    <string name="posting_fr">Envoi&#8230;</string>
+    <string name="searching_en">Searching&#8230;</string>
+    <string name="searching_fr">Recherche&#8230;</string>
+    <!-- Comment Page -->
+    <string name="be_the_first_en">Be the first to state an opinion!</string>
+    <string name="be_the_first_fr">Soyez la première personne à réagir\nLaissez un commentaire !!</string>
+    
+    <string name="be_the_first_hint_en">Be the first to post a comment!</string>
+    <string name="be_the_first_hint_fr">Ajouter votre commentaire&#8230;</string>
+    								
+    <string name="pull_to_refresh_pull_label_en">Pull to refresh&#8230;</string>
+    <string name="pull_to_refresh_pull_label_fr">Tirer vers le bas pour actualiser&#8230;</string>
+    
+    <string name="pull_to_refresh_release_label_en">Release to refresh&#8230;</string>
+    <string name="pull_to_refresh_release_label_fr">Relâchez pour actualiser&#8230;</string>
+    
+    <string name="pull_to_refresh_refreshing_label_en">Loading&#8230;</string>
+    <string name="pull_to_refresh_tap_label_en">Tap to refresh&#8230;</string>
+    <string name="pull_to_refresh_tap_label_fr">Cliquez ici pour actualiser&#8230;</string>
+    
+    <string name="label_pull_down_en">Pull down to refresh</string>
+    <string name="label_update_en">updating&#8230;</string>
+    <string name="label_load_more_en">load more</string>
+    <string name="label_character_left_en">left</string>
+    <string name="label_search_location_en">Search a location related to your question :</string>
+    <string name="label_select_tag_en">Select a tag :</string>
+    <string name="label_feed_en">feed</string>
+    <string name="label_login_en">login</string>
+    
+    <string name="placeholder_select_location_en">select a location</string>
+    <string name="placeholder_write_question_en">Write your question&#8230;</string>
+    
+   
+    <string name="label_pull_down_fr">Tirer vers le bas pour rafraichir</string>
+    <string name="label_update_fr">Chargement</string>
+    <string name="label_load_more_fr">voir plus de question</string>
+    <string name="label_character_left_fr">restants</string>
+    <string name="label_search_location_fr">Associez un lieu à votre question :</string>
+    <string name="label_select_tag_fr">Associez un sujet à votre question :</string>
+    <string name="label_feed_fr">liste</string>
+    <string name="label_login_fr">connexion</string>
+    
+    <string name="placeholder_select_location_fr">choisir un lieu</string>
+    <string name="placeholder_write_question_fr">Ecrivez votre question&#8230;</string>
+    
+    <string name="privacy_link_en">href="https://docs.google.com/document/d/11tl9BfQNTQUwRTdY4BMnGHB5jVCJqdF7fYhwcW-_FZE/edit</string>
+    <string name="privacy_link_fr">https://docs.google.com/document/d/1DYflUWs6DAjWE1NI2kz1sWYbmGxTETOgpZavi3znKUs/edit?usp=sharing</string>
+    <string name="term_link_en">https://docs.google.com/document/d/1DYflUWs6DAjWE1NI2kz1sWYbmGxTETOgpZavi3znKUs/edit?usp=sharing</string>
+    <string name="term_link_fr">https://docs.google.com/document/d/1NJJxAubYbhScMIJ8GXiDcBT1raCIqGZbaMe-5CI0DBE/edit?usp=sharing</string>
+    
+    <!-- Setting Page -->
+    <string name="save_en">Save</string>
+    <string name="save_fr">SAUVEGARDER</string>
+    <string name="cancel_fr">annuler</string>
+    <string name="name_en">Name</string>
+    <string name="name_fr">Prénom et Nom</string>
+    <string name="lives_en">Lives In</string>
+    <string name="lives_fr">Ville</string>
+    <string name="birthday_en">Birthday</string>
+    <string name="birthday_fr">Date de naissance</string>
+    <string name="nationality_en">Nationality</string>
+    <string name="nationality_fr">Nationalité</string>
+    <string name="sex_en">Sex</string>
+    <string name="sex_fr">Sexe</string>
+    <string name="notification_en">Notification</string>
+    <string name="notification_fr">Notifications</string>
+    <string name="tailored_en">Tailored for you</string>
+    <string name="tailored_fr"></string>
+    <string name="off_en">Off</string>
+    <string name="off_fr">Non</string>
+    <string name="on_en">On</string>
+    <string name="on_fr">Oui</string>
+    <string name="guy_en">I\'M A GUY</string>
+    <string name="guy_fr">HOMME</string>
+    <string name="girl_en">I\'M A GIRL</string>
+    <string name="girl_fr">FEMME</string>
+    
+    <!-- Search Page -->
+    
+    <string name="search_no_result_en">Oh sorry, no question fits with this number</string>
+    <string name="search_no_result_fr">Nous sommes désolés \n aucune question ne correspond à ce numéro</string>
+</resources>

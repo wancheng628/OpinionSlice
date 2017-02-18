@@ -1,0 +1,39 @@
+<resources>
+
+     <style name="AppBaseTheme" parent="android:Theme.Holo">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:actionBarTabStyle">@style/TabBar</item>
+    </style>
+    <style name="ActionBar" parent="android:style/Widget.Holo.ActionBar">     
+        <item name="android:background">@color/blue_main</item>
+    </style>
+    <style name="TabBar" parent="android:style/Widget.Holo.ActionBar.TabView">     
+        
+    </style>
+
+    <color name="green_shade">#00A44f</color>
+    <color name="blue_shade">#00ADEE</color>
+    <color name="red">#ffff0000</color>
+    <color name="white">#ffffffff</color>
+    <color name="blue_main">#56ACEE</color>
+    <color name="gray_main">#DDDDDD</color>
+    <color name="dark_gray">#3F3F3F</color>
+    <color name="light_gray">#F7F3F2</color>
+    <color name="custom_gray">#4D4D4D</color>
+    
+    <color name="dark_slate_gray">#2F4F4F</color>
+	<color name="gray_2">#AFAFAF</color>
+	<color name="gray_1">#C0C0C0</color>
+	<color name="black">#000000</color>
+	
+	<color name="link_color">#666666</color>
+</resources>
